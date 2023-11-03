@@ -1,0 +1,189 @@
+{ "hotels":
+   [
+   {
+       "name" : "Elite Stadshotellet Växjö",
+       "adress" : "Kungsgatan 6, Växjö, 352 33",
+       "stars" : "4",
+       "price" : "1284 Skr a night",
+       "lat" : "56.878055919966144",
+       "lng" : "14.808782794641376",
+       "offers" : {
+           "1 ": "Included breakfast",
+           "2 ": "Gym",
+           "3 ": "Free Wi-Fi",
+           "4 ": "Bar",
+           "5 ": "Parking"
+        }
+
+
+
+
+   },
+   {
+       "name" : "Hotell Esplanad",
+       "adress" : "Norra Esplanaden 21 A, Växjö, 35231",
+       "stars" : "3.5",
+       "price" : "1230 Skr a night",
+       "lat" : "56.88142030380657",
+       "lng" : "14.80629661884446",
+        "offers" : {
+           "1 ": "Included breakfast",
+           "2 ":  "Pool",
+           "3 ": "Spa",
+           "4 ": "Free Wi-Fi",
+           "5 ": "Parking"
+        }
+
+
+   },
+   {
+       "name" : "Clarion Collection Hotel Cardinal",
+       "adress" : "Bäckgatan 10, GPS: Sandgärdsgatan 22, Växjö, 352 30",
+       "stars" : "3.5",
+       "price" : "1200 Skr a night",
+       "lat" : "56.878551841726335",
+       "lng" : "14.805197316526653",
+       "offers" : {
+           "1 ": "Included breakfast",
+           "2 ":  "Gym",
+           "3 ": "Bar",
+           "4 ": "Free Wi-Fi",
+           "5 ": "Parking"
+        }
+
+
+   },
+   {
+       "name" : "Hotell Värend",
+       "adress" : "Kungsgatan 27, Växjö, 352 33",
+       "stars" : "3",
+       "price" : "850 Skr a night",
+       "lat" : "56.88280289447219",
+       "lng" : "14.80846845566496",
+       "offers" : {
+           "1 ": "Included breakfast",
+           "2 ":  "Free Wi-Fi",
+           "3 ": "Parking"
+
+        }
+
+
+   },
+   {
+       "name" : "Quality Hotel Royal Corner",
+       "adress" : "Liedbergsgatan 11, Växjö, 352 32",
+       "stars" : "4",
+       "price" : "1507 Skr a night",
+       "lat" : "56.87984764508954",
+       "lng" : "14.798912083605176",
+       "offers" : {
+           "1 ": "Included breakfast",
+           "2 ":  "Pool",
+           "3 ": "Parking",
+           "4 ":  "Gym",
+           "5 ": "Free Wi-Fi"
+        }
+
+
+   },
+   {
+       "name" : "PM & Vänner Hotel",
+       "adress" : "Vastergatan 10, Växjö, 35231",
+       "stars" : "4",
+       "price" : "3028 Skr a night",
+       "lat" : "56.87967509840579",
+       "lng" : "14.805075026717502",
+       "offers" : {
+           "1 ": "Included breakfast",
+           "2 ":  "Pool",
+           "3 ": "Parking",
+           "4 ":  "Gym",
+           "5 ":  "Spa",
+           "6 ": "Bar",
+           "7 ": "Free Wi-Fi"
+        }
+   },
+   {
+       "name" : "Scandic Växjö",
+       "adress" : "Hejaregatan 19, Växjö, 352 46",
+       "stars" : "3",
+       "price" : "1416 Skr a night",
+       "lat" : "56.884067007937674",
+       "lng" : "14.76070767400854",
+       "offers" : {
+           "1 ": "Included breakfast",
+           "2 ":  "Pool",
+           "3 ": "Parking",
+           "4 ":  "Free Wi-Fi",
+           "5 ":  "Gym"
+          
+        }
+
+
+   },
+   {
+       "name" : "Teleborgs Slott",
+       "adress" : "Slottsallén, Växjö, 35196",
+       "stars" : "3.5",
+       "price" : "1795 Skr a night",
+       "lat" : "56.857019813607735",
+       "lng" : "14.834302750553807",
+       "offers" : {
+           "1 ": "Included breakfast",
+           "2 ":  "Bar",
+           "3 ": "Parking",
+           "4 ":  "Free Wi-Fi"
+          
+        }
+   },
+   {
+       "name" : "Easy Livin Apartment Hotel by Stubo",
+       "adress" : "Fredrik Bondes väg 5, Växjö, Kronoberg, 35256",
+       "stars" : "3.5",
+       "price" : "927 Skr a night",
+       "lat" : "56.85001052050481",
+       "lng" : "14.826070210333805",
+       "offers" : {
+           "1 ": "Included breakfast",
+           "2 ":  "Gym",
+           "3 ": "Parking",
+           "4 ":  "Free Wi-Fi"
+          
+        }
+
+
+   },
+   {
+       "name" : "Evedals Camping",
+       "adress" : "L.J.BRANDTS VÄG 3, Växjö, 35263",
+       "stars" : "2",
+       "price" : "1562 Skr a night",
+       "lat" : "56.922762275133955",
+       "lng" : "14.817814137937521",
+       "offers" : {
+           "1 ": "Included breakfast",
+           "2 ":  "Bar",
+           "3 ": "Parking",
+           "4 ":  "Free Wi-Fi"
+          
+        }
+
+
+   },
+   {
+       "name" : "Evedals Vandrarhem - Hostel",
+       "adress" : "L.J.BRANDTS VÄG 1, Växjö, 352 63",
+       "stars" : "2",
+       "price" : "836 Skr a night",
+       "lat" : "56.92133970315059",
+       "lng" : "14.821500351901815",
+       "offers" : {
+           "1 ": "Included breakfast",
+           "2 ":  "Bar",
+           "3 ": "Parking",
+           "4 ":  "Free Wi-Fi"
+          
+        }
+   }
+   ]
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="css/style.css">
+    <script src='https://kit.fontawesome.com/0911954135.js' crossorigin='anonymous'></script>
+    <title>Tourist Guide</title> 
+</head>
+<body>
+
+    <main class="main">
+        <h1 id="h1">Tourist Guide </h1>
+
+    <section class="container" id="categories">
+    <div class="banner" >
+    <a  href="hotel.html" class = "ctgrys" name = "Hotels" id="hotel">
+        <img src="img/hotel3.jpg" alt="">
+        <div class="content" >
+          
+            <h4 class="btn"  name = ""> Hotels <img src="img/hotel.png" alt="hotel icon" style="width: 35px;"></h4>
+    </div></a>
+</div>
+<div class="banner" >
+    <a href="destinations.html" class = "ctgrys" name = "" id = "destns">
+        <img src="img/atr.jpg" alt="">
+        <div class="content">
+                  
+            <h4 class="btn" name = "">  Attractions<img class="icon" src="img/des.png" alt=" magnifying glass"  style="width: 30px;"></h4>
+
+    </div></a>
+</div>
+
+<div class="banner">
+    <a href="club.html" class = "ctgrys" name = "">
+        <img src="img/club.jpg" alt=""  >
+        <div class="content">
+          
+            <h4 class="btn"  name = ""> Clubs <img src="img/club.png" alt="music icon" style="width: 35px;"></h4>
+    </div></a>
+</div>
+
+
+<div class="banner">
+    <a href="activities.html" class = "ctgrys" name = "">
+        <img src="img/act.jpg" alt="">
+        <div class="content">
+          
+            <h4 class="btn"  name = ""> Activities<img class="icon" src="img/acti.png" alt="music icon"  style="width: 30px;"></h4>
+    </div></a>
+</div>
+
+
+
+
+
+
+
+<div class="banner" style="align-self: center;">
+    <a href="app.html" class = "ctgrys" name = "">
+        <img src="img/app.jpg" alt="">
+        <div class="content">
+           
+            <h4 class="btn"  > Applications<img class=" apps icon" src="img/app.png" alt="music icon"  style="width: 30px;"></h4>
+
+    </div></a>
+</div>   
+</div>
+
+<div class="scroll-down-arrow" id="scroll-down-arrow">
+    
+    <img src="img/down.png" alt="scroll down arrow" style="height: 40px;">
+ 
+</div>
+
+
+
+</section>
+</main>
+   
+</body>
+</html>
+<script>
+    let currentScrollPosition = 0;
+
+document.getElementById("scroll-down-arrow").addEventListener("click", function() {
+    const scrollAmount = 310;
+    currentScrollPosition += scrollAmount;
+    window.scrollTo({ top: currentScrollPosition, behavior: "smooth" });
+
+});
+/*document.getElementById("scroll-down-arrow").addEventListener("click", function() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+});*/
+    
+</script>

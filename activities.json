@@ -1,0 +1,186 @@
+{
+    "activities":[
+        
+            {
+          
+                "name" : "Leo's Lekland",
+                "type" : "Playground",
+                "price" : "-Unavailable-",
+                "rev" : "3.9",
+                "address" : "Hjalmar Petris väg 40, 352 46 Växjö",
+                "lat" : "56.89145516974542",
+                "lng" : " 14.768357479809941",
+                "time" : { 
+                           "Monday: ": "10-19",
+                           "Tuesday: ": "10-19",
+                           "Wednesday: ": "10-19",
+                           "Thursday: ": "10-19",
+                           "Friday: ": "10-19",
+                           "Saturday: ": "10-19",
+                           "Sonday: ": "10-19"}  
+            },
+            {
+              
+                "name" : "Knock 'em Down",
+                "type" : "Event center, bowling & restaurant",
+                "price" : "$$",
+                "rev" : "4.2",
+                "address" : "Västra Esplanaden 5, 352 31 Växjö",
+                "lat" : "56.8795156655235",
+                "lng" : "14.801401244193961",
+                "time" : { 
+                           "Monday: ": "Closed",
+                           "Tuesday: ": "15:30-22",
+                           "Wednesday: ": "15:30-23",
+                           "Thursday: ": "15:30-23",
+                           "Friday: ": "15:30-01",
+                           "Saturday: ": "12:30-01",
+                           "Sonday: ": "10:45-18"}  
+            },
+            {
+              
+                "name" : "Wallride",
+                "type" : "Skateboardpark",
+                "price" : "-Unavailable-",
+                "rev" : "5",
+                "address" : "Arabygatan 13, 352 46 Växjö",
+                "lat" : "56.88189705413993",
+                "lng" : "14.783779253878812",
+                "time" : { 
+                           "Monday: ": "12-19",
+                           "Tuesday: ": "12-19",
+                           "Wednesday: ": "12-19",
+                           "Thursday: ": "12-19",
+                           "Friday: ": "12-19",
+                           "Saturday: ": "Closed",
+                           "Sonday: ": "10-17"}  
+            },
+            {
+              
+                "name" : "Linnés värld i Linnéparken",
+                "type" : "Playground",
+                "price" : "Free",
+                "rev" : "4.5",
+                "address" : "Linnégatan 1, 352 33 Växjö",
+                "lat" : "56.876527844359615",
+                "lng" : "14.811430829170204",
+                "time" : { 
+                           "Monday: ": "00-00",
+                           "Tuesday: ": "00-00",
+                           "Wednesday: ": "00-00",
+                           "Thursday: ": "00-00",
+                           "Friday: ": "00-00",
+                           "Saturday: ": "00-00",
+                           "Sonday: ": "00-00"}  
+            },
+            {
+              
+                "name" : "Spetsamossen Parkourpark",
+                "type" : "Sport field",
+                "price" : "Free",
+                "rev" : "4",
+                "address" : "Västra Esplanaden 27, 352 31 Växjö",
+                "lat" : "56.88411928516303",
+                "lng" : "14.801531492648301",
+                "time" : { 
+                           "Monday: ": "00-00",
+                           "Tuesday: ": "00-00",
+                           "Wednesday: ": "00-00",
+                           "Thursday: ": "00-00",
+                           "Friday: ": "00-00",
+                           "Saturday: ": "00-00",
+                           "Sonday: ": "00-00"}  
+            },
+            {
+              
+                "name" : "Smålands Spelhall",
+                "type" : "Arcade",
+                "price" : "-Unavailable-",
+                "rev" : "4.7",
+                "address" : "Smedjegatan 15, 352 46 Växjö",
+                "lat" : "56.883025874558676",
+                "lng" : "14.779767631157195",
+                "time" : { 
+                           "Monday: ": "Closed",
+                           "Tuesday: ": "Closed",
+                           "Wednesday: ": "16-19",
+                           "Thursday: ": "Closed",
+                           "Friday: ": "Closed",
+                           "Saturday: ": "10-17",
+                           "Sonday: ": "14-17"}  
+            },
+            {
+              
+                "name" : "Smålands Museum/Sveriges Glasmuseum",
+                "type" : "Glassmuseum",
+                "price" : "-Unavailable-",
+                "rev" : "4.2",
+                "address" : "Södra Järnvägsgatan 2, 352 29 Växjö",
+                "lat" : "56.87558419842325",
+                "lng" : "14.806692944061385",
+                "time" : { 
+                           "Monday: ": "Closed",
+                           "Tuesday: ": "10-17",
+                           "Wednesday: ": "10-17",
+                           "Thursday: ": "10-17",
+                           "Friday: ": "10-17",
+                           "Saturday: ": "10-16",
+                           "Sonday: ": "10-16"}  
+            },
+            {
+              
+                "name" : "Hop N Pop Trampolinpark - Växjö",
+                "type" : "Trampolinpark",
+                "price" : "-Unavailable-",
+                "rev" : "4.3",
+                "address" : "Deltavägen 5, 352 45 Växjö",
+                "lat" : "56.90339429966327",
+                "lng" : "14.831458919980454",
+                "time" : { 
+                           "Monday: ": "Closed",
+                           "Tuesday: ": "Closed",
+                           "Wednesday: ": "13-19",
+                           "Thursday: ": "13-19",
+                           "Friday: ": "10-19",
+                           "Saturday: ": "10-18",
+                           "Sonday: ": "10-18"}  
+            },
+            {
+              
+                "name" : "BGK Värend - Bangolf",
+                "type" : "Mini golf course",
+                "price" : "-Unavailable-",
+                "rev" : "4",
+                "address" : "Evedalsvägen, 352 63 Växjö",
+                "lat" : "56.92128854147916",
+                "lng" : "14.819398503768456",
+                "time" : { 
+                           "Monday: ": "13-19:30",
+                           "Tuesday: ": "13-19:30",
+                           "Wednesday: ": "13-19:30",
+                           "Thursday: ": "13-19:30",
+                           "Friday: ": "13-19:30",
+                           "Saturday: ": "13-19:30",
+                           "Sonday: ": "13-19:30"}  
+            },
+            {
+              
+                "name" : "Tetraedern",
+                "type" : "Gym",
+                "price" : "-Unavailable-",
+                "rev" : "4.5",
+                "address" : "Unnamed Road, 355 91 Växjö",
+                "lat" : "56.86504165543208",
+                "lng" : "14.833463582856055",
+                "time" : { 
+                           "Monday: ": "05-23",
+                           "Tuesday: ": "05-23",
+                           "Wednesday: ": "05-23",
+                           "Thursday: ": "05-23",
+                           "Friday: ": "05-23",
+                           "Saturday: ": "05-23",
+                           "Sonday: ": "05-23"}  
+            }
+            
+           ]
+        }  

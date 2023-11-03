@@ -1,0 +1,159 @@
+{ "destinations":
+   [
+    {
+        "name" : "Växjö domkyrka",
+        "adress" : "Växjö domkyrka, Linnégatan 2A, 352 33 Växjö",
+        "stars": "4.5",
+        "type" : "Church",
+        "des" : "The cathedral is from the late 12th century and contains beautiful works of art in, among other things, glass. The church is linked to Sankt Sigfrid who Christianized the population in the area in the 11th century, when the church was also built. However, it has been rebuilt several times due to, among other things, fires",
+        "lat" : "56.87742305527602",
+        "lng" : "14.811859694212353",
+        "time" : { 
+            "Monday: ": "09-18",
+            "Tuesday: ": "09-18",
+            "Wednesday: ": "09-18",
+            "Thursday: ": "09-18",
+            "Friday: ": "09-18",
+            "Saturday: ": "09-18",
+            "Sonday: ": "09-18"}  
+ 
+ 
+    },
+
+    {
+        "name" : "Linneträdgården i Växjö",
+        "adress" : "352 57 Växjö",
+        "stars" : "4.1",
+        "type" : "Park",
+        "des" : "The Linné Garden is located directly next to Lake Trummen, about 15 minutes' walk from the center of Växjö. The Linné garden is designed by perhaps the country's foremost landscape architect, Ulf Nordfjell. He has created a modern Linnaean Garden that reflects our time's interest in architecture, art, design, nature and gardening.",
+        "lat" : "56.862887830823645",
+        "lng" : "14.820339171384648",
+        "time" : { 
+            "Monday: ": "00-00",
+            "Tuesday: ": "00-00",
+            "Wednesday: ": "00-00",
+            "Thursday: ": "00-00",
+            "Friday: ": "00-00",
+            "Saturday: ": "00-00",
+            "Sonday: ": "00-00"}   
+ 
+ 
+    },
+    {
+        "name" : "Utvandrarnas hus",
+        "adress" : "Vilhelm Mobergs gata 4, 352 34 Växjö",
+        "stars" : "",
+        "type" : "Museum",
+        "des" : "The Emigrants' House was inaugurated in August 1968 and is the Nordic region's largest institute with a focus on emigration to North America. In Utvandranarnas hus there are exhibitions, archives, a library and research activities. In the various exhibitions at Utvandranarnas hus, the great wave of emigration to America in the 19th and 20th centuries is depicted.",
+        "lat" : "56.875846150692475",
+        "lng" : "14.808736342197559",
+        "time" : { 
+            "Monday: ": "closed",
+            "Tuesday: ": "10-17",
+            "Wednesday: ": "10-17",
+            "Thursday: ": "10-17",
+            "Friday: ": "10-17",
+            "Saturday: ": "11-16",
+            "Sonday: ": "11-16"}   
+ 
+ 
+    },
+    {
+        "name" : "Bergkvara slottsruin",
+        "adress" : "352 50 Växjö",
+        "stars" : "3.9",
+        "type" : "Castle ruin",
+        "des" : "Bergkvara is a manor house and castle ruins in Växjö municipality in Kronoberg county. Historically speaking, the estate has been located within Bergunda parish, Kinnevalds county in Värend.",
+        "lat" : "56.867751759066614",
+        "lng" : "14.724254604041214",
+        "time" : { 
+            "Monday: ": "09-18",
+            "Tuesday: ": "09-18",
+            "Wednesday: ": "09-18",
+            "Thursday: ": "09-18",
+            "Friday: ": "09-18",
+            "Saturday: ": "09-18",
+            "Sonday: ": "09-18"}   
+ 
+ 
+    },
+    {
+        "name" : "Bokhultet",
+        "adress" : "Unnamed Road, 352 59 Växjö",
+        "stars" : "4.6",
+        "type" : "Nature reserve",
+        "des" : "Bokhultet is perhaps most beautiful in the spring when the sunlight filters down through the beech's light green foliage, but the nature reserve is well worth a visit in all seasons. Here you can walk, walk the dog or jog on one of the many paths or take a break and look out over the water from Borgmästarudden. The lake, the forests and the open meadows offer fantastic nature experiences.",
+        "lat" : "56.85943496136405",
+        "lng" : "14.767865073212842",
+        "time" : { 
+            "Monday: ": "00-00",
+            "Tuesday: ": "00-00",
+            "Wednesday: ": "00-00",
+            "Thursday: ": "00-00",
+            "Friday: ": "00-00",
+            "Saturday: ": "00-00",
+            "Sonday: ": "00-00"}   
+ 
+ 
+    },
+    {
+        "name" : "Vattentorget",
+        "adress" : "VATTENTORGET 1, 352 34 Växjö",
+        "stars" : "4.5",
+        "type" : "Walking area & meeting place",
+        "des" : "Meeting place Vattentorget, is a cultural center at Vattentorget in Växjö. The first part of the building, which was originally an electricity plant, was erected in 1887 by Lake Växjö. It was then Sweden's first municipal power plant for street lighting and general distribution",
+        "lat" : "56.875713803907146",
+        "lng" : "14.810339305575084",
+        "time" : { 
+            "Monday: ": "00-00",
+            "Tuesday: ": "00-00",
+            "Wednesday: ": "00-00",
+            "Thursday: ": "00-00",
+            "Friday: ": "00-00",
+            "Saturday: ": "00-00",
+            "Sonday: ": "00-00"}  
+ 
+ 
+    },
+    {
+        "name" : "Biparadiset",
+        "adress": "56°52'05.8'N 14°46'48.6'E",
+        "stars" : "4.3",
+        "type" : "Nature reserve",
+        "des" : "The bee paradise was created to strengthen species of rare and endangered insects that already occur in the Bäckaslöv area. The area is specially created to benefit butterflies, wild bees and other insects.",
+        "lat" : "56.867832616548945",
+        "lng" : "14.780552284574078",
+        "time" : { 
+            "Monday: ": "00-00",
+            "Tuesday: ": "00-00",
+            "Wednesday: ": "00-00",
+            "Thursday: ": "00-00",
+            "Friday: ": "00-00",
+            "Saturday: ": "00-00",
+            "Sonday: ": "00-00"} 
+ 
+ 
+    },
+    {
+        "name" : "Ekotemplet",
+        "adress" : "352 55 Växjö",
+        "stars" : "4.2",
+        "type" : "Water tower",
+        "des" : "Teleborg's water tower, known as the Ekotemplet, is a water tower in Teleborg in Växjö. The water tower was built in 1974. It is 24 meters high, 35 meters in diameter and holds 4,500 cubic meters of water. The nickname Echo Temple comes from the echo that occurs under the reservoir, which has made the water tower a tourist destination",
+        "lat" : "56.84499846672896",
+        "lng" : "14.82630827055621",
+        "time" : { 
+            "Monday: ": "00-00",
+            "Tuesday: ": "00-00",
+            "Wednesday: ": "00-00",
+            "Thursday: ": "00-00",
+            "Friday: ": "00-00",
+            "Saturday: ": "00-00",
+            "Sonday: ": "00-00"} 
+ 
+    }
+    
+    
+    ]
+ }
+ 

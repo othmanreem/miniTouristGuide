@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <title>Hotels</title>
+  <script src='https://kit.fontawesome.com/0911954135.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+
+
+  <main class="main">
+
+    <div class="hdr">
+      <a href="index.html#categories" class="name"><img src="img/back.png" alt="go back arrow" style="height: 30px;"> Go
+        back </a>
+      <h1 class="h1"> Hotels </h1>
+    </div>
+    <p class="buttns"> <button value="highestRated" class="sort"> Highest Rated </button> <button value="nearest"
+        class="sort"> Nearest</button> </p>
+    <div id="map">
+
+    </div>
+
+    <div id="holder"> </div>
+
+
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var hotelholder = document.getElementById("holder");
+      var stationLat = 56.87681320015513;
+      var stationLng = 14.806772340957496;
+      var mapOb = L.map('map').setView([56.87681320015513, 14.806772340957496], 13);
+
+
+      var userdMarker = L.marker([56.87681320015513, 14.806772340957496]).addTo(mapOb);
+      userdMarker.bindPopup("Your position").openPopup();
+      var mrkr = null;
+      var route = null;
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapOb);
+      var requests;
+      var sortBts = document.getElementsByClassName("sort");
+
+      function present() {
+        let request = new XMLHttpRequest();
+        request.open("GET", "hotel.json", true);
+        request.send(null);
+        request.onreadystatechange = function () {
+          if (request.readyState == 4) {
+            if (request.status == 200) {
+              requests = request.responseText;
+              gethotel(requests);
+            } else {
+              console.log("error: " + request.status);
+            }
+          }
+        };
+      }
+      window.addEventListener("load", present);
+
+      for (let i = 0; i < sortBts.length; i++) {
+        sortBts[i].addEventListener("click", function () {
+          gethotel(requests, sortBts[i].getAttribute("value"));
+        })
+      }
+
+
+      function gethotel(response, val) {
+        hotelholder.innerHTML = "";
+        response = JSON.parse(response);
+        let obs = response.hotels;
+        let obsArr = [];
+        for (let i = 0; i < obs.length; i++) {
+          let name = obs[i].name;
+          let stars = obs[i].stars;
+
+          let lat = obs[i].lat;
+          let lon = obs[i].lng;
+          let radia = 6371;
+          let Lat = (lat - stationLat) * Math.PI / 180;
+          let lng = (lon - stationLng) * Math.PI / 180;
+          let a = Math.sin(Lat / 2) * Math.sin(Lat / 2) +
+            Math.cos(stationLat * Math.PI / 180) * Math.cos(lat * Math.PI / 180) *
+            Math.sin(lng / 2) * Math.sin(lng / 2);
+          let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+          let d = radia * c;
+          let adress = obs[i].adress;
+          let offers = obs[i].offers;
+          let price = obs[i].price;
+
+          obsArr.push({ name: name, d: d, stars: stars, lat: lat, lon: lon, adress: adress, offers: offers, price: price })
+        }
+
+        switch (val) {
+          case "highestRated":
+            obsArr.sort(function (a, b) {
+              return b.stars - a.stars;
+            });
+            break;
+          case "nearest":
+            obsArr.sort(function (a, b) {
+              return a.d - b.d;
+            });
+            break;
+
+        }
+
+        obsArr.forEach(function (obb) {
+          let nameE = obb.name;
+          let name = document.createTextNode(obb.name);
+
+          let nameElm = document.createElement("p");
+          nameElm.appendChild(name);
+
+          nameElm.style.fontSize = "1.4rem";
+          hotelholder.appendChild(nameElm);
+
+          let modStars = Math.round(obb.stars);
+          let starCount = document.createTextNode("Star rating " + modStars + " ")
+          let starelem = document.createElement("p");
+          starelem.style.fontSize = "1.3rem";
+          starelem.appendChild(starCount);
+          hotelholder.appendChild(starelem);
+          for (let l = 0; l < modStars; l++) {
+            let starimg = document.createElement("img");
+            starimg.setAttribute("src", "img/star.png");
+            starimg.style.width = "28px";
+            starimg.style.paddingLeft = "4px";
+            starelem.appendChild(starimg);
+          }
+          let price = obb.price;
+          let priceelem = document.createElement("p");
+          let pricetxt = document.createTextNode("Price is, " + price);
+          priceelem.appendChild(pricetxt);
+          hotelholder.appendChild(priceelem);
+          let d = obb.d;
+          let km = document.createTextNode("This hotel is almost " + Math.round(d) + " km away");
+          let dstnsElem = document.createElement("p");
+          dstnsElem.appendChild(km);
+          hotelholder.appendChild(dstnsElem);
+          let adress = obb.adress;
+
+          let lat = parseFloat(obb.lat);
+          let lon = parseFloat(obb.lon);
+          let button = document.createElement("button");
+          let butText = document.createTextNode("Offers");
+          button.appendChild(butText);
+          hotelholder.appendChild(button);
+          let deselem = document.createElement("div");
+          hotelholder.appendChild(deselem);
+          let hidep = document.createElement("p");
+          hotelholder.appendChild(hidep);
+          let offers = obb.offers;
+
+
+          button.addEventListener("click", function () {
+            offerFunc(offers, deselem, hidep)
+          });
+          let posbutton = document.createElement("button");
+          let markimg = document.createElement("img");
+          markimg.setAttribute("src", "img/marker.png");
+          markimg.style.height = "20px";
+          markimg.style.marginLeft = "5px";
+          posbutton.setAttribute('lt', lat);
+          posbutton.setAttribute('ln', lon);
+          posbutton.setAttribute('namee', nameE)
+          let posText = document.createTextNode("Show on Map");
+          posbutton.appendChild(posText);
+          hotelholder.appendChild(posbutton);
+          posbutton.appendChild(markimg);
+          posbutton.addEventListener("click", function () {
+            let lt = this.getAttribute('lt');
+            let ln = this.getAttribute('ln');
+            let namee = this.getAttribute('namee');
+            onmap(lt, ln, namee, adress);
+          });
+          let hr = document.createElement("hr");
+          hotelholder.appendChild(hr);
+        });
+      }
+
+
+      function offerFunc(defen, holder, hidep) {
+        holder.innerHTML = "";
+        hidep.innerHTML = "";
+
+        let ofersAr = [];
+        for (let oneOfer in defen) {
+          if (defen.hasOwnProperty(oneOfer)) {
+            let ofrs = defen[oneOfer];
+            ofersAr.push(oneOfer + ": " + ofrs);
+            let ofrString = ofrs.split(", ");
+            let offerIcon = mapOfferToIcon(ofrs);
+            let ofertext = document.createTextNode("  " + ofrString);
+            let oferElem = document.createElement("p");
+            let img = document.createElement("img");
+            img.setAttribute("src", offerIcon);
+            img.style.width = "24px";
+            oferElem.appendChild(img);
+            oferElem.appendChild(ofertext);
+            oferElem.style.backgroundColor = "#ffffff";
+            oferElem.style.borderRadius = "3px";
+            oferElem.style.padding = "10px";
+            holder.appendChild(oferElem);
+          }
+        }
+        function mapOfferToIcon(offer) {
+          switch (offer) {
+            case "Included breakfast": return "img/break.png";
+            case "Pool": return "img/pool.png";
+            case "Parking": return "img/parking.png";
+            case "Free Wi-Fi": return "img/wifi.png";
+            case "Gym": return "img/gym.png";
+            case "Bar": return "img/bar.png";
+            case "Spa": return "img/spa.png";
+          }
+        }
+
+
+        let button = document.createElement("button");
+        let butText = document.createTextNode("Hide");
+        button.appendChild(butText);
+        hidep.appendChild(button);
+        button.addEventListener("click", function () {
+          hidetimes(holder, hidep)
+        });
+
+      }
+
+      function hidetimes(opelem, hidop) {
+        opelem.innerHTML = "";
+        hidop.innerHTML = "";
+      }
+      function onmap(lat, lon, name, adrs) {
+
+        if (mrkr) {
+          mapOb.removeLayer(mrkr);
+        }
+        let namadrs = `${name}<br>Address: ${adrs}`;
+        let marker = L.marker([lat, lon]).addTo(mapOb);
+        marker.bindPopup(namadrs).openPopup();
+        mrkr = marker;
+      }
+    }); 
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+{
+    "clubs":[
+        {
+          
+            "name" : "Chapter House",
+            "type" : " Bar",
+            "price" : "$$",
+            "rev" : "4.4",
+            "address" : "Klostergatan 7, 352 30 Växjö",
+            "lat" : "56.87855876090982",
+            "lng" : "14.80705503065447",
+            "time" : { 
+                       "Monday: ": "Closed",
+                       "Tuesday: ": "16-23",
+                       "Wednesday: ": "16-00",
+                       "Thursday: ": "16-00",
+                       "Friday: ": "15-01",
+                       "Saturday: ": "12-01",
+                       "Sonday: ": "Closed"}  
+        },
+        {
+          
+            "name" : "Lion Bar Växjö",
+            "type" : " Pub",
+            "price" : "$",
+            "rev" : "3.7",
+            "address" : "Båtsmanstorget 1, 352 30 Växjö",
+            "lat" : "56.87750710261096",
+            "lng" : "14.804817973792158",
+            "time" : { 
+                       "Monday: ": "13-01",
+                       "Tuesday: ": "13-01",
+                       "Wednesday: ": "13-01",
+                       "Thursday: ": "13-01",
+                       "Friday: ": "13-02",
+                       "Saturday: ": "12-02",
+                       "Sonday: ": "13-01"}  
+        },
+        {
+          
+            "name" : "The Bishops Arms - Växjö",
+            "type" : "Gastropub",
+            "price" : "$$",
+            "rev" : "4",
+            "address" : " Kungsgatan 6, 352 33 Växjö",
+            "lat" : "56.877713261160324",
+            "lng" : " 14.80916166716516",
+            "time" : { 
+                       "Monday: ": "17-23",
+                       "Tuesday: ": "17-23",
+                       "Wednesday: ": "17-00",
+                       "Thursday: ": "17-23",
+                       "Friday: ": "17-01",
+                       "Saturday: ": "17-01",
+                       "Sonday: ": "17-22"}  
+        },
+        {
+          
+            "name" : "Slottsstallarna",
+            "type" : "Nightclub",
+            "price" : "$",
+            "rev" : "4",
+            "address" : "Slottsallén 28, 352 56 Växjö",
+            "lat" : "56.855775915235995",
+            "lng" : "14.832903585632092",
+            "time" : { 
+                       "Monday: ": "Closed",
+                       "Tuesday: ": "Closed",
+                       "Wednesday: ": "Closed",
+                       "Thursday: ": "19-01",
+                       "Friday: ": "22-02",
+                       "Saturday: ": "Closed",
+                       "Sonday: ": "Closed"}  
+        },
+        {
+          
+            "name" : "Sivans",
+            "type" : "Nightclub",
+            "price" : "$",
+            "rev" : "4.3",
+            "address" : "Georg Lückligs väg 12, 352 52 Växjö",
+            "lat" : "56.85295548766395",
+            "lng" : "14.830289408762958",
+            "time" : { 
+                       "Monday: ": "Closed",
+                       "Tuesday: ": "Closed",
+                       "Wednesday: ": "22-01",
+                       "Thursday: ": "Closed",
+                       "Friday: ": "18-21",
+                       "Saturday: ": "22-02",
+                       "Sonday: ": "Closed"}  
+        },
+        {
+          
+            "name" : "O'Learys Växjö",
+            "type" : "Nightclub & Amerikansk restaurant",
+            "price" : "$$",
+            "rev" : "3.8",
+            "address" : "Storgatan 10, 352 31 Växjö",
+            "lat" : "56.87880566120979",
+            "lng" : "14.807574123550468",
+            "time" : { 
+                       "Monday: ": "16-23",
+                       "Tuesday: ": "16-23",
+                       "Wednesday: ": "16-00",
+                       "Thursday: ": "16-00",
+                       "Friday: ": "15-03",
+                       "Saturday: ": "11:30-03",
+                       "Sonday: ": "11:30-23"}  
+        },
+        {
+          
+            "name" : "Kafé de luxe",
+            "type" : "Nightclub &  restaurant",
+            "price" : "$$",
+            "rev" : "4.1",
+            "address" : "Sandgärdsgatan, 352 30 Växjö",
+            "lat" : "56.877870807026966",
+            "lng" : "14.806500965294692",
+            "time" : { 
+                       "Monday: ": "11:30-23",
+                       "Tuesday: ": "11:30-23",
+                       "Wednesday: ": "11:30-01",
+                       "Thursday: ": "11:30-01",
+                       "Friday: ": "11:30-03",
+                       "Saturday: ": "11:30-03",
+                       "Sonday: ": "11:30-23"}  
+        }
+       ]
+    }  
